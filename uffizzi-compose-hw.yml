@@ -3,6 +3,9 @@ services:
     build: 
       context: https://github.com/moklidia/hello-world-1#brach-for-del
       dockerfile: Dockerfile
+      args:
+        - IMAGES_PATH=images
+        - TEST_ARG=Hello from compose
     continuous_previews:
       share_to_github: true
       delete_preview_after: 97h

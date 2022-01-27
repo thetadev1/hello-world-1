@@ -14,3 +14,9 @@ x-uffizzi:
     delete_preview_when_image_tag_is_updated: true
     deploy_preview_when_image_tag_is_created: true
     share_to_github: true
+
+configs:
+  my_config:
+    file: ./configs/vote.conf
+  my_config_2:
+    file: ./config2/vote2.conf

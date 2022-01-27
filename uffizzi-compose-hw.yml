@@ -1,7 +1,7 @@
 services:
   hello-world:
     build: 
-      context: https://github.com/moklidia/hello-world-1#master
+      context: https://github.com/moklidia/hello-world-1#compose-test
       dockerfile: Dockerfile
     continuous_previews:
       share_to_github: true

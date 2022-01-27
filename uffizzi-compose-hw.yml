@@ -3,6 +3,11 @@ services:
     build: 
       context: https://github.com/moklidia/hello-world-1#compose-test
       dockerfile: Dockerfile
+  nginx:
+    image: nginx
+    configs:
+      - source: my_config_2
+        target: /etc/nginx/conf.d/default.conf
 
 x-uffizzi:
   ingress:

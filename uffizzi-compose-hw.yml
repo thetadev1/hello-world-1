@@ -3,11 +3,6 @@ services:
     build: 
       context: https://github.com/moklidia/hello-world-1#compose-test
       dockerfile: Dockerfile
-  configs:
-    my_config:
-      file: ./configs/vote.conf
-    my_config_2:
-      file: ./config2/vote2.conf
 
 x-uffizzi:
   ingress:

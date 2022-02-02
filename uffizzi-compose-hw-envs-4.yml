@@ -1,0 +1,12 @@
+services:
+  hello-world:
+    build:
+      context: https://github.com/moklidia/hello-world:master
+    env_file:
+    environment:
+      - =123
+      - TEST_ENV_2=123
+
+ingress:
+  service: hello-world
+  port: 80

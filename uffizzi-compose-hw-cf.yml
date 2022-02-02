@@ -1,0 +1,11 @@
+services:
+  hello-world:
+    build:
+      context: https://github.com/moklidia/hello-world:master
+    configs:
+      - source: vote.conf
+        target: /etc/nginx
+
+ingress:
+  service: hello-world
+  port: 80

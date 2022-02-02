@@ -1,0 +1,8 @@
+services:
+  hello-world:
+    build:
+      context: https://github.com/moklidia/hello-world:master
+
+ingress:
+  service: hello-world
+  port: 80

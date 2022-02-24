@@ -16,7 +16,7 @@ x-uffizzi:
   continuous_previews:
     deploy_preview_when_pull_request_is_opened: true
     delete_preview_when_pull_request_is_closed: true
-    delete_preview_when_image_tag_is_updated: true
+    delete_preview_when_image_tag_is_updated: false
     deploy_preview_when_image_tag_is_created: true
     share_to_github: true
 
